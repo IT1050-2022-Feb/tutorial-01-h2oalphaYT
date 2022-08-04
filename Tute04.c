@@ -6,14 +6,38 @@ Do not change the code given in the main() function when you are implementing yo
 
 #include <stdio.h>
 
-int main() {
-   int no1, no2;
-   printf("Enter a value for no 1 : ");
-   scanf("%d", &no1);
-   printf("Enter a value for no 2 : ");
-   scanf("%d", &no2);
-   printf("%d ", minimum(no1, no2));
-   printf("%d ", maximum(no1, no2));
-   printf("%d ", multiply(no1, no2));
-   return 0;
+int max(int , int);
+int min(int , int);
+int multiply ( int , int );
+
+int main(void) 
+{
+    int num1, num2 ;
+    
+    
+    printf("Enter any two numbers: ");
+    scanf("%d %d", &num1,&num2);
+    
+    printf("Maximum = %d\n", max(num1, num2));
+    printf("Minimum = %d\n", min(num1, num2));
+    printf("Product = %d",multiply(num1 , num2));
+    
+    return 0;
+}
+
+
+int max(int num1, int num2)
+{
+    return (num1 > num2 ) ? num1 : num2;
+}
+
+
+int min(int num1, int num2) 
+{
+    return (num1 > num2 ) ? num2 : num1;
+}
+
+int multiply ( int no1, int no2 )
+{
+	return no1* no2;
 }

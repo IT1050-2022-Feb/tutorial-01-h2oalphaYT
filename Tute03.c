@@ -13,7 +13,21 @@ sum = 1+2+3+...+10 = 55 */
 
 #include <stdio.h>
 int main() {
+  int n ,i ,sum;
+
+  printf("enter to tha any nemuber :");
+  scanf("%d", &n) ;
+
+  for(i=1 ; i<=n; ++i) 
+  {
+    sum = sum +i ;
+    
+  }
+  printf("value = %d" , sum) ;
+
+  
+
+  
   
   return 0;
 }
-
